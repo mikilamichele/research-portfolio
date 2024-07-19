@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #1A1112; /* Updated text color */
+    color: #1A1112;
 }
 
 header {
-    background: linear-gradient(to right, #B46F81, #E49B3C); /* Gradient background */
-    color: #F0F0F0; /* Updated text color */
+    background: linear-gradient(to right, #B46F81, #E49B3C);
+    color: #1A1112;
     padding: 1rem;
 }
 
@@ -22,12 +22,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #F0F0F0; /* Updated text color */
+    color: #1A1112;
     text-decoration: none;
 }
 
 main {
     padding: 1rem;
+    min-height: calc(100vh - 60px); /* Adjust according to your header and footer heights */
 }
 
 footer {
@@ -35,7 +36,17 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
+    position: relative; /* Change from fixed to relative */
     width: 100%;
+}
+
+img {
+    max-width: 100%; /* Ensure images do not exceed the width of their container */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+#visualizations {
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
 }
