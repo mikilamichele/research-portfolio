@@ -13,7 +13,11 @@ data = {
 
 df = pd.DataFrame(data)
 df.set_index('Narcissism Subscales', inplace=True)
-df.plot(kind='bar', figsize=(10, 6))
+
+# Custom colors
+colors = ['#E49B3C', '#C58BA1', '#955796', '#A99EA2', '#EFA697']
+
+ax = df.plot(kind='bar', figsize=(10, 6), color=colors)
 
 plt.title('Narcissism Subscales Across Profiles')
 plt.xlabel('Narcissism Subscales')
