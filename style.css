@@ -7,7 +7,7 @@ body {
 
 header {
     background: linear-gradient(to right, #B46F81, #E49B3C); /* Gradient background */
-    color: #1A1112; /* Updated text color */
+    color: #F0F0F0; /* Updated text color */
     padding: 1rem;
 }
 
@@ -22,7 +22,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #1A1112; /* Updated text color */
+    color: #F0F0F0; /* Updated text color */
     text-decoration: none;
 }
 
